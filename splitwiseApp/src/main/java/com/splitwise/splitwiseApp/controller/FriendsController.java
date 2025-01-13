@@ -29,6 +29,7 @@ public class FriendsController {
 	
 	@PostMapping("/add")
 	public ResponseEntity<Friends> addFriends(@RequestBody Friends friend){
+		//Used to add Friends
 		return new ResponseEntity<>(friendsService.saveFriends(friend),HttpStatus.CREATED);
 	}
 }
