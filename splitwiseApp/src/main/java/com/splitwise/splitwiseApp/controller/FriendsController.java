@@ -29,7 +29,7 @@ public class FriendsController {
 	
 	@PostMapping("/add")
 	public ResponseEntity<Friends> addFriends(@RequestBody Friends friend){
-		//Used to add Friends
+		//Used to add Users
 		return new ResponseEntity<>(friendsService.saveFriends(friend),HttpStatus.CREATED);
 	}
 }
